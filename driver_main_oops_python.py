@@ -1,5 +1,5 @@
-from classoop import Organisation, Employee, FinanceManagement
-from employeesdetail import SaveDetails
+from org_emp_oops_python import Organisation, Employee, FinanceManagement
+from filehandling_without_class_python import SaveDetails
 import csv, os
 
 def main():

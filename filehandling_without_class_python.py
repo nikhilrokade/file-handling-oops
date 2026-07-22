@@ -1,16 +1,12 @@
 from datetime import date
 
-print("Hello Program Started")
-mem_employee_details = {}
-mem_employee_office_details = {}
+class SaveDetails:
+    print("Hello Program Started")
+    mem_employee_details = {}
+    mem_employee_office_details = {}
 
-def employee_details(emp_id: int, first_name: str, last_name: str, email_id: str, designation: str, department: str, joining_date: date) -> dict:
-    return {"Id": emp_id, "Full Name": f"{first_name} {last_name}",
-    "email": email_id,
-    "Role": designation,
-    "Work": department,
-    "Joined On": joining_date
-    }
+    def employee_details(emp_id: int, first_name: str, last_name: str, email_id: str, designation: str, department: str, joining_date: date) -> dict:
+        return {"Id": emp_id, "Full Name": f"{first_name} {last_name}","email": email_id, "Role": designation,"Work": department,"Joined On": joining_date}
 
 def employee_office_details(emp_id: int, salary: float, variable_pay: float, tax_deduction: float) -> dict:
     salary_structure = {
